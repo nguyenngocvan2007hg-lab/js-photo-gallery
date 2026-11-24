@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/gallery.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Interactivity with JavaScript</p>
+    <h1>Interactive Photo Gallery</h1>
+    <p>Move your mouse over a photograph to preview it. Move away to reset.</p>
+    <p class="keyboard-tip">You can also use the Tab key to focus on each photograph.</p>
+  </header>
+  <main>
+    <div id="image">Hover over an image below to display here.</div>
+    <div class="thumbnails" aria-label="Photograph previews">
+    <img class="preview" src="images/BaconGallupPark.jpg" alt="Brown labradoodle sitting next to a statue in a sunny park"
+         tabindex="0" onmouseover="upDate(this)" onmouseout="unDo()"
+         onfocus="upDate(this)" onblur="unDo()">
+    <img class="preview" src="images/bacon_in_the_woods.png" alt="Brown labradoodle sitting beside a stream in the woods"
+         tabindex="0" onmouseover="upDate(this)" onmouseout="unDo()"
+         onfocus="upDate(this)" onblur="unDo()">
+    <img class="preview" src="images/bacon_near_the_fort.png" alt="Brown labradoodle standing in front of a fort made of branches"
+         tabindex="0" onmouseover="upDate(this)" onmouseout="unDo()"
+         onfocus="upDate(this)" onblur="unDo()">
+    </div>
+  </main>
+  <footer><p>Photographs by Colleen van Lent, from the course starter images.</p></footer>
+</body>
+</html>
